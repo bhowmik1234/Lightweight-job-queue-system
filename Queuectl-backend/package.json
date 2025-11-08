@@ -1,0 +1,29 @@
+{
+  "name": "queuectl",
+  "version": "0.1.0",
+  "main": "dist/cli.js",
+  "bin": {
+    "queuectl": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.7.0",
+    "body-parser": "^2.2.0",
+    "commander": "^10.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

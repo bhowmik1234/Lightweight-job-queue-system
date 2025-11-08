@@ -1,0 +1,12 @@
+/Queuectl-backend/node_modules
+/Queuectl-frontend/node_modules
+
+/Queuectl-backend/.env
+/Queuectl-frontend/.env
+
+/Queuectl-backend/dist
+/Queuectl-frontend/dist
+
+
+DS_Store
+vscode/
