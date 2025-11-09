@@ -182,7 +182,7 @@ export default function QueuectlDashboard() {
               onChange={(e) => setQueueFilter(e.target.value)}
               className="px-2 py-1 border rounded text-sm"
             >
-              <option value="">all</option>
+              <option value="all">all</option>
               {queues.map((q) => (
                 <option key={q} value={q}>{q}</option>
               ))}

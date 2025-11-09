@@ -6,6 +6,8 @@ There’s also a small web dashboard where you can see what’s going on in real
 
 <hr>
 
+### Video Link: <a href="https://drive.google.com/file/d/1B6ZmJpo8DPOTgz-ccue2dQZ2NgBx4Dp6/view?usp=sharing">video submission link</a>
+
 ### Features
 
 ✅ **Persistent Job Storage** — jobs are stored in SQLite and survive restarts<br>
