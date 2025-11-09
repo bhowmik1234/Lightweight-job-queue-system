@@ -69,7 +69,7 @@ cd Queuectl-backend
 npm run build
 ```
 
-#### 4. Link the CLI (optional)
+#### 4. Link the CLI 
 
 ```bash
 npm link
