@@ -44,19 +44,26 @@ There’s also a small web dashboard where you can see what’s going on in real
 
 ```bash
 git clone https://github.com/bhowmik1234/queuectl.git
-cd queuectl/Queuectl-backend and queuectl/Queuectl-frontend
 ```
 
 #### 2. Install dependencies
 
 ```bash
+cd Queuectl-backend 
 npm install
+cd Queuectl-frontend
+npm install
+```
+### If got error; use nodejs 20
+```bash
+nvm install 20
+nvm use 20
 ```
 
 #### 3. Build the TypeScript project
 
 ```bash
-cd queuectl/Queuectl-backend
+cd Queuectl-backend
 npm run build
 ```
 
@@ -86,14 +93,14 @@ DB_PATH=./queuectl.db  // Path to SQLite database filě
 ## Run Backend server
 
 ```bash
-cd queuectl/Queuectl-backend
+cd Queuectl-backend
 npx ts-node src/server.ts
 ```
 
 ## Run Frontend server
 
 ```bash
-cd queuectl/Queuectl-frontend
+cd Queuectl-frontend
 npm run dev
 ```
 

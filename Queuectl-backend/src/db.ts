@@ -54,5 +54,6 @@ export function migrate() {
     const insertMetric = db.prepare(
         "INSERT OR IGNORE INTO metrics (key, value) VALUES (?, ?)"
     );
+    insertMetric.run("completed_jobs", 0);
     insertMetric.run("avg_runtime_ms", 0);
 }

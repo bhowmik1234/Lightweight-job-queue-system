@@ -133,13 +133,11 @@ function updateMetrics(type: string, startTime: number) {
 
     if (type === "completed_jobs") {
         const prevAvg =
-            db
-                .prepare("SELECT value FROM metrics WHERE key='avg_runtime_ms'")
-                .get()?.value || 0;
+            db.prepare("SELECT value FROM metrics WHERE key='avg_runtime_ms'")
+              .get()?.value || 0;
         const prevCount =
-            db
-                .prepare("SELECT value FROM metrics WHERE key='completed_jobs'")
-                .get()?.value || 0;
+            db.prepare("SELECT value FROM metrics WHERE key='completed_jobs'")
+              .get()?.value || 0;
         const newAvg = (prevAvg * prevCount + duration) / (prevCount + 1);
         db.prepare("UPDATE metrics SET value=? WHERE key='avg_runtime_ms'").run(
             newAvg
