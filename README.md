@@ -51,12 +51,14 @@ git clone https://github.com/bhowmik1234/queuectl.git
 #### 2. Install dependencies
 
 ```bash
-cd Queuectl-backend 
+cd Queuectl-backend
 npm install
 cd Queuectl-frontend
 npm install
 ```
+
 ### If got error; use nodejs 20
+
 ```bash
 nvm install 20
 nvm use 20
@@ -69,7 +71,7 @@ cd Queuectl-backend
 npm run build
 ```
 
-#### 4. Link the CLI 
+#### 4. Link the CLI
 
 ```bash
 npm link
@@ -117,13 +119,14 @@ npm run dev
 queuectl enqueue <payload>
 ```
 
-| Option                 | Description                                    |
-| ---------------------- | ---------------------------------------------- |
-| `--id <id>`            | Custom job ID                                  |
-| `--max-retries <n>`    | Max retry count (default: 3)                   |
-| `--priority <n>`       | Priority (default: 5; lower = higher priority) |
-| `--timeout <sec>`      | Timeout in seconds                             |
-| `--run-at <timestamp>` | Schedule job for later (epoch seconds)         |
+| Option                                                          | Description                                    |
+| --------------------------------------------------------------- | ---------------------------------------------- |
+| `--id <id>`                                                     | Custom job ID                                  |
+| `--max-retries <n>`                                             | Max retry count (default: 3)                   |
+| `--priority <n>`                                                | Priority (default: 5; lower = higher priority) |
+| `--timeout <sec>`                                               | Timeout in seconds                             |
+| `--run-at <timestamp>`                                          | Schedule job for later (epoch seconds)         |
+| `{command, maxRetries, id, priority, timeoutSec, runAt, queue}` | provide data in json                           |
 
 <hr>
 
